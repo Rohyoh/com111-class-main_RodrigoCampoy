@@ -5,6 +5,7 @@ body {
 .d1{
     background-color: red;
     position: absolute;
+    top:480px;
     left: 400px;
     height: 200px;
     width: 200px;
@@ -20,6 +21,7 @@ body {
 .d3{
     background-color: yellow;
     position: absolute;
+    top:280px;
     left:200px;
     height: 200px;
     width: 200px;

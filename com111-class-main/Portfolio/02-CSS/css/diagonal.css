@@ -1,3 +1,26 @@
 body {
     margin: 0;
 }
+
+div{
+    text-align: center;
+     width: 200px;
+    height: 200px;
+}
+
+.d1{
+   border: solid 10px;
+   padding: 20px;
+}
+
+.d2{
+    border: dashed 20px;
+    position: relative;
+    left: 260px;
+}
+
+.d3{
+    border: dotted 10px;
+    position: relative;
+    left: 500px;
+}
