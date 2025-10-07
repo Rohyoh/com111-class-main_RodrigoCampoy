@@ -1,3 +1,119 @@
-body {
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+
+.bg-body {
+    background-color: #505050;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #500916;
+    font-size: 5.5rem;
+    margin: 50px auto;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color: #b32525;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fa3553;
+}
+
+h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff6378;
+}
+
+a:hover {
+    color: green;
+}
+
+.background-elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.mountain {
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    z-index: 0;
+}
+
+.cloud1, .cloud2 {
+    position: absolute;
+    top: 50px;
+    opacity: 0.8;
+    width: 150px;
+    height: auto;
+    z-index: 0;
+}
+
+.cloud1 {
+    left: 10%;
+    margin-top: 50px;
+}
+
+.cloud2 {
+    right: 10%;
+    margin-top: 100px;
+}
+
+.iconic-link {
+    transition: all 0.3s ease;
+}
+
+.iconic-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Table styles for schedule */
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .mountain {
+        max-width: 150px;
+    }
+    
+    .cloud1, .cloud2 {
+        width: 100px;
+    }
 }
