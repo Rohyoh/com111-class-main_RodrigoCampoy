@@ -1,121 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
   
-  body {
+body {
     margin: 0;
     font-family: 'Merriweather', serif;
     text-align: center;
     background-color: #E4F9F5;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-family: 'Sacramento', cursive;
     color: #500916;
     font-size: 5.5rem;
     margin: 50px auto;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     padding-bottom: 10px;
     color: #b32525;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-family: 'Montserrat', sans-serif;
     color: #fa3553;
-  }
-  
-  hr {
+}
+
+h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
     border: dotted #EAF6F6 6px;
     border-bottom: none;
     width: 4%;
     margin: 100px auto;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     font-weight: bold;
     color: #ff6378;
-  }
-  
-  a:hover {
-    color: green;
-  }
-  
-  img {
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
-  }
-  
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  
-  td, th {
-    text-align: center;
-  }
+}
 
-  .section-container {
+a:hover {
+    color: green;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.section-container {
     background-color: #E4F9F5;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
-  }
-  
-  .section-container.even {
-    background-color: #c9e9e3;
-  }
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+.section-container.even {
+    background-color: #c9e9e3;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none;
 }
 
-.container {
-  padding: 0 16px;
+.card-title {
+    color: #500916;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.btn-primary {
+    background-color: #ff6378;
+    border-color: #ff6378;
 }
 
-.title {
-  color: grey;
+.btn-primary:hover {
+    background-color: #e05568;
+    border-color: #e05568;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+.btn-outline-primary {
+    color: #ff6378;
+    border-color: #ff6378;
 }
 
-.button:hover {
-  background-color: #555;
+.btn-outline-primary:hover {
+    background-color: #ff6378;
+    border-color: #ff6378;
+}
+
+.btn-dark {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-dark:hover {
+    background-color: #555;
+    border-color: #555;
 }
 
 .background-elements {
@@ -125,11 +109,11 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 1;
+    z-index: -1;
     overflow: hidden;
-  }
-  
-  .mountain {
+}
+
+.mountain {
     position: fixed;
     bottom: 0;
     left: 75%;
@@ -137,73 +121,83 @@
     width: 100%;
     max-width: 200px;
     height: auto;
-    z-index: 1;
-  }
-  
-  .cloud1, .cloud2 {
+    z-index: -1;
+}
+
+.cloud1, .cloud2 {
     position: sticky;
     top: 50px;
     opacity: 0.8;
     width: 150px;
     height: auto;
-    z-index: 1;
-  }
-  
-  .cloud1 {
+    z-index: -1;
+}
+
+.cloud1 {
     float: left;
     margin-left: 10%;
     margin-top: 50px;
-  }
-  
-  .cloud2 {
+}
+
+.cloud2 {
     float: right;
     margin-right: 10%;
     margin-top: 100px;
-  }
+}
 
-  form {
+form {
     border: 3px dotted #ff6378;
     border-radius: 15px;
     padding: 20px;
     background-color: #e0f7fa;
     margin: 0 auto;
-    max-width: 90%;
-  }
-  
-  form table {
-    width: 100%;
-  }
-  
-  form input[type="text"],
-  form input[type="date"],
-  form input[type="time"],
-  form input[type="color"],
-  form select,
-  form textarea {
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form input[type="color"],
+form select,
+form textarea {
     border-radius: 20px;
     padding: 8px 15px;
     border: 1px solid #ccc;
     background-color: #ffffff;
     font-family: 'Merriweather', serif;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  form input[type="submit"],
-  form input[type="reset"] {
-    border-radius: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #ff6378;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  form label {
+}
+
+form label {
     font-weight: bold;
     color: #500916;
-  }
+}
 
-  
+.list-group-item {
+    border: none;
+    background-color: transparent;
+}
+
+.badge {
+    background-color: #ff6378;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .mountain {
+        max-width: 150px;
+    }
+    
+    .cloud1, .cloud2 {
+        width: 100px;
+    }
+}

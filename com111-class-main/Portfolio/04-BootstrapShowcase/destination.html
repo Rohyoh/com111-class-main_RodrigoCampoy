@@ -3,155 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Destinations</title>
-
 </head>
 <body>
-    <a href="index.html">HOMEPAGE</a>
-    <p>
-        <a href="#colombia">Colombia</a> | 
-        <a href="#usa">USA</a> | 
-        <a href="#mexico">México</a> | 
-        <a href="#russia">Russia</a> | 
-        <a href="#japan">Japan</a>
-    </p>
-  <hr>
-  
-  <section id="colombia">
-     <a name="colombia"></a>
-     <div class="section-container">
-     <table align="left">
-      <thead>
-        <tr>
-          <th><b>Colombia</b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">   
-      <ol>
-  <li align="center"><b> Province/State: </b>Bogotá </li>
-  <li align="center"><b> Country: </b>Colombia </li>
-  <li align="center"><b> Population: </b>7.907 million (2023-Bogotá) </li>
-  <li align="center"><b> Latitude & longitude: </b> 4.7110° N, 74.0721° W</li>
-
-      </ol>
-	</td>
- <td align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/330px-Flag_of_Colombia.svg.png" height="100" width="100" alt="colombian flag"/> </td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="container my-4">
+    <a href="index.html" class="btn btn-outline-primary mb-3">HOMEPAGE</a>
+    
+    <div class="text-center mb-4">
+      <a href="#colombia" class="mx-2">Colombia</a> | 
+      <a href="#usa" class="mx-2">USA</a> | 
+      <a href="#mexico" class="mx-2">México</a> | 
+      <a href="#russia" class="mx-2">Russia</a> | 
+      <a href="#japan" class="mx-2">Japan</a>
     </div>
-  </section>
+    
+    <hr>
+    
+    <section id="colombia">
+      <a name="colombia"></a>
+      <div class="section-container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h3 class="mb-3"><b>Colombia</b></h3>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Province/State:</div>
+                  Bogotá
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Country:</div>
+                  Colombia
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Population:</div>
+                  7.907 million (2023-Bogotá)
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Latitude & longitude:</div>
+                  4.7110° N, 74.0721° W
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/330px-Flag_of_Colombia.svg.png" 
+                 height="100" width="100" alt="colombian flag" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="usa">
-     <a name="usa"></a>
-     <div class="section-container even">
-     <table align="left">
-      <thead>
-        <tr>
-          <th><b>USA</b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">   
-      <ol>
-  <li align="center"><b> Province/State: </b>California </li>
-  <li align="center"><b> Country: </b>USA </li>
-  <li align="center"><b> Population: </b>39.43 million (2024-California) </li>
-  <li align="center"><b> Latitude & longitude: </b> 36.7783° N, 119.4179° W</li>
+    <section id="usa">
+      <a name="usa"></a>
+      <div class="section-container even mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h3 class="mb-3"><b>USA</b></h3>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Province/State:</div>
+                  California
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Country:</div>
+                  USA
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Population:</div>
+                  39.43 million (2024-California)
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Latitude & longitude:</div>
+                  36.7783° N, 119.4179° W
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" 
+                 height="100" width="100" alt="usa flag" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
 
-      </ol>
-	</td>
- <td align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" height="100" width="100" alt="usa flag"/> </td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-  </section>
+    <section id="mexico">
+      <a name="mexico"></a>
+      <div class="section-container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h3 class="mb-3"><b>México</b></h3>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Province/State:</div>
+                  Sinaloa
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Country:</div>
+                  México
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Population:</div>
+                  3 million (2020-Sinaloa)
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Latitude & longitude:</div>
+                  25.8227° N, 108.2217° W
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/960px-Flag_of_Mexico.svg.png" 
+                 height="100" width="100" alt="mexican flag" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="mexico">
-     <a name="mexico"></a>
-     <div class="section-container">
-     <table align="left">
-      <thead>
-        <tr>
-          <th><b>México</b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">   
-      <ol>
-  <li align="center"><b> Province/State: </b>Sinaloa </li>
-  <li align="center"><b> Country: </b>México </li>
-  <li align="center"><b> Population: </b>3 million (2020-Sinaloa) </li>
-  <li align="center"><b> Latitude & longitude: </b>25.8227° N, 108.2217° W </li>
+    <section id="russia">
+      <a name="russia"></a>
+      <div class="section-container even mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h3 class="mb-3"><b>Russia</b></h3>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Province/State:</div>
+                  Moscow
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Country:</div>
+                  Russia
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Population:</div>
+                  13.1 million (2023-Moscow)
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Latitude & longitude:</div>
+                  55.7569° N, 37.6151° E
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png" 
+                 height="100" width="100" alt="russian flag" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
 
-      </ol>
-	</td>
- <td align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/960px-Flag_of_Mexico.svg.png" height="100" width="100" alt="mexican flag"/> </td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-  </section>
+    <section id="japan">
+      <a name="japan"></a>
+      <div class="section-container mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h3 class="mb-3"><b>Japan</b></h3>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Province/State:</div>
+                  Osaka
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Country:</div>
+                  Japan
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Population:</div>
+                  2.794 million (2025-Japan)
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Latitude & longitude:</div>
+                  34.6937° N, 135.5023° E
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/330px-Flag_of_Japan.svg.png" 
+                 height="100" width="100" alt="japanese flag" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-<section id="russia">
-     <a name="russia"></a>
-     <div class="section-container even">
-     <table align="left">
-      <thead>
-        <tr>
-          <th><b>Russia</b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">   
-      <ol>
-  <li align="center"><b> Province/State: </b>Moscow </li>
-  <li align="center"><b> Country: </b>Russia </li>
-  <li align="center"><b> Population: </b>13.1 million (2023-Moscow) </li>
-  <li align="center"><b> Latitude & longitude: </b>55.7569° N, 37.6151° E</li>
-
-      </ol>
-	</td>
- <td align="center"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png" height="100" width="100" alt="russian flag"/> </td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-  </section>
-
-  <section id="japan">
-     <a name="japan"></a>
-     <div class="section-container">
-     <table align="left">
-      <thead>
-        <tr>
-          <th><b>Japan</b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">   
-      <ol>
-  <li align="center"><b> Province/State: </b>Osaka </li>
-  <li align="center"><b> Country: </b>Japan </li>
-  <li align="center"><b> Population: </b>2.794 million (2025-Japan) </li>
-  <li align="center"><b> Latitude & longitude: </b>34.6937° N, 135.5023° E</li>
-
-      </ol>
-	</td>
- <td align="center"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/330px-Flag_of_Japan.svg.png" height="100" width="100" alt="japanese flag"/> </td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-  </section>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
