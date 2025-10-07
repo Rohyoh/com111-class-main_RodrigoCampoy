@@ -8,7 +8,7 @@ function fibonacci() {
   "use strict";
   var n = document.getElementById("num").value;
   var val = f(n);
-  return val;
+  document.getElementById("fibonacciLbl").textContent = val;
 }
 
 function f(n) {
@@ -18,10 +18,17 @@ function f(n) {
     value = memo[n];
   } else {
     //TODO: Implement the fibonacci function here!
-
+    if (n <= 0) {
+      value = 0;
+    } else if (n == 1) {
+      value = 1;
+    } else {
+      value = f(n - 1) + f(n - 2);
+    }
     memo[n] = value;
   }
-
   return value;
 }
-console.log(fibonacci(15));
+window.onload = function() {
+  document.getElementById("btn").addEventListener("click", fibonacci);
+};
