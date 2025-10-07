@@ -1,377 +1,627 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Personal Website - CSS</title>
-  
+  <title>Personal Website - Bootstrap</title>
 </head>
-<body style="background-color: rgb(80, 80, 80);">
-<div class="background-elements">
-  <img src="images/mountain.png" alt="Mountain" class="mountain">
-  <img src="images/cloud.png" alt="Cloud" class="cloud1">
-  <img src="images/cloud.png" alt="Cloud" class="cloud2">
-</div>
-
-    <a name="top"></a>
-  <h1 align= "center">Marco Rodrigo Campoy Mendoza</h1>
-  <img align="center" src="./images/myself.png" height="100" width="100" alt="myself"/>
-   <p align="center"> <b>FAVORITE QUOTE: </b><a href="https://www.youtube.com/watch?v=OaFk8XkgZik">"GREEN, GREEN! Whats your problem green? Me say alone ramp, ME SAY ALONE RAMP!!!!111"<i> -Tense1983</i></a> </p>
-
-  
-  <hr>
-  <section id="background">
-    <a name="background"></a>
-    <div class="section-container">
-    <h2 align="center">--About me-- </h2>
-  <p align="center">I like doing <i>art</i>, programminga and learning new <i>languages</i>. I strive to be a known <b>artist</b> or game <b>developer</b></p>
-  </div>
-  </section>
-  <hr>
-  <h3 align="center">HOMEPAGE</h3>
-  <p align="center">
-    | <a href="#background">About Me</a> | 
-    <a href="#education">Education</a> | 
-    <a href="#skills">Skills</a> | 
-    <a href="#hobbies">Hobbies</a> | 
-    <a href="#favorite-food">Favorite Food</a> | 
-    <a href="#books">Books/Movies/TV</a> | 
-    <a href="#musicians">Musicians</a> | 
-    <a href="#schedule-form">Form</a> |
-  </p>
-  <hr>
-  <h3 align="center">OTHER PAGES</h3>
-  <p align="center">
-    <a href="destination.html">My Favorite Spots</a> |
-    <a href="destination.html#colombia">Colombia</a> | 
-    <a href="destination.html#usa">USA</a> | 
-    <a href="destination.html#mexico">México</a> | 
-    <a href="destination.html#russia">Russia</a> | 
-    <a href="destination.html#japan">Japan</a>
-  </p>
-  <hr> 
-    <section id="education">
-      <a name="education"></a>
-      <div class="section-container even">
-      <p align="left"> <b>CURRENT JOB: </b>Undergraduate Student at Universidad Panamericana </p>
-       <table align="center">
-      <thead>
-        <tr>
-          <th><b>SCHOOLS I ASSISTED</b></th>
-        </tr>
-        <tr>
-          <th>ELEMENTARY</th>
-          <th>PRIMARY</th>
-          <th>MIDDLE SCHOOL</th>
-          <th>HIGH SCHOOL</th>
-          <th>UNIVERSITY</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center"><b>Tzitlacali</b> - <em>2007~2012</em></td>
-          <td align="center"><b>Colegio Altamira</b> -  <em>2012~2018</em></td>
-          <td align="center"><b>Colegio Altamira</b> - <em>2018~2021</em></td>
-          <td align="center"><b>Colegio Altamira</b> - <em>2021~2024</em></td>
-          <td align="center"><b>Universidad Panamericana</b> - <em>2024~Today</em></td>
-        </tr>
-         <tr>
-          <td align="center"><a href="https://www.tzitlacalli.edu.mx"><img src="https://www.micole.net/imagenes/colegio/logo/200072583/tzitlacalli-plantel-ermita_512.png"width="100" height="100" alt="Tzitlacali logo"/></a></td>
-          <td align="center"><a href="https://www.altamira.edu.mx"><img src="https://edutory.mx/wp-content/uploads/2021/07/colegio-altamira-logo.png"width="100" height="100" alt="Altamira logo"/></a></td>
-          <td align="center"><a href="https://www.altamira.edu.mx"><img src="https://edutory.mx/wp-content/uploads/2021/07/colegio-altamira-logo.png"width="100" height="100" alt="Altamira logo"/></a></td>
-          <td align="center"><a href="https://www.altamira.edu.mx"><img src="https://edutory.mx/wp-content/uploads/2021/07/colegio-altamira-logo.png"width="100" height="100" alt="Altamira logo"/></a></td>
-          <td align="center"><a href="https://www.up.edu.mx"><img src="https://rugcmx.org/wp-content/uploads/2024/03/logoup.png"width="100" height="100" alt="UP logo"/></a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  </section>
-
-  <hr>
-<section id="skills">
-    <a name="skills"></a>
-    <div class="section-container">
-    <h3 align="left">SKILLS: </h3>
-      <ol>
-  <li align="center">ART SOFTWARE KNOWLEDGE - <b>~60%</b></li>
-  <li align="center">API USAGE KNOWLEDGE - <b>~10%</b></li>
-  <li align="center">VISUAL TECHNOLOGIES KNOWLEDGE - <b>~10%</b></li>
-  <li align="center">VTUBER MODEL CREATION (rigging and tracking tech) KNOWLEDGE - <b>~5%</b></li>
-  <li align="center">GAME'S INTERNAL DATA MODIFICATION KNOWLEDGE - <b>~5%</b></li>
-</ol>
-  </div>
-  </section>
+<body class="bg-body">
+  <!-- Header Section -->
+  <header class="bg-dark text-white py-4 position-relative overflow-hidden">
+    <div class="background-elements">
+      <img src="images/mountain.png" alt="Mountain" class="mountain">
+      <img src="images/cloud.png" alt="Cloud" class="cloud1">
+      <img src="images/cloud.png" alt="Cloud" class="cloud2">
+    </div>
     
-  <hr>
-<section id="hobbies">
-  <a name="hobbies"></a>
-  <div class="section-container even">
-  <h3 align="left">HOBBIES: </h3> 
-  <p align="center">I have several hobbies, such as <b>drawing</b>, <b>3d moddeling</b>, <b>playing Counter strike</b>, on the sidelines, although it's not so <i>ethic</i>
-  I also do some research on <b>game cheats development</b>, and lastly i'm crazy obsessed with all sorts of <b>tracking technology</b> and <b>vtubers</b></p>
-  </div>
-  </section>
-  
-  <hr>
-<section id="favorite-food">
-    <a name="favorite-food"></a>
-    <div class="section-container">
-    <h3 align="left">MY FAVORITE FOOD: </h3>
-      <ol>
-  <li align="center">JAPANESE - <b>the goat</b></li>
-  <li align="center">MEXICAN - <b>it just never misses</b></li>
-  <li align="center">ITALIAN - <b>they know what's up</b></li>
-  <li align="center">SPANISH - <b>nothing like a paella in a hot summer</b></li>
-  <li align="center">ARAB - <b>KEBABBBBBBBBBB</b></li>
-</ol>
-  </div>
-  </section>
+    <div class="container text-center position-relative">
+      <h1 class="display-4 fw-bold mb-3">Marco Rodrigo Campoy Mendoza</h1>
+      <div class="d-flex justify-content-center align-items-center mb-3">
+        <img src="./images/myself.png" class="rounded-circle me-3" height="100" width="100" alt="myself">
+        <p class="mb-0">
+          <b>FAVORITE QUOTE: </b>
+          <a href="https://www.youtube.com/watch?v=OaFk8XkgZik" class="text-warning" data-bs-toggle="tooltip" title="Watch the original video">
+            "GREEN, GREEN! Whats your problem green? Me say alone ramp, ME SAY ALONE RAMP!!!!111"
+            <i>-Tense1983</i>
+          </a>
+        </p>
+      </div>
+      <!-- Progress bar -->
+      <div class="progress mt-3 mx-auto" style="max-width: 300px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Website Completion: 75%</div>
+      </div>
+    </div>
+  </header>
 
-  <hr>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#background">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#favorite-food">Favorite Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="#books">Books/Movies/TV</a></li>
+          <li class="nav-item"><a class="nav-link" href="#musicians">Musicians</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule-form">Form</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Favorite Spots
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="destination.html">All Spots</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="destination.html#colombia">Colombia</a></li>
+              <li><a class="dropdown-item" href="destination.html#usa">USA</a></li>
+              <li><a class="dropdown-item" href="destination.html#mexico">México</a></li>
+              <li><a class="dropdown-item" href="destination.html#russia">Russia</a></li>
+              <li><a class="dropdown-item" href="destination.html#japan">Japan</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Button group -->
+        <div class="btn-group ms-3">
+          <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <i class="bi bi-envelope"></i> Contact
+          </button>
+          <button type="button" class="btn btn-outline-light" data-bs-toggle="popover" data-bs-title="Info" data-bs-content="This is my personal website">
+            <i class="bi bi-info-circle"></i> Info
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-<h3 align="left">Books, Movies & TV Shows: </h3>
-<table>
-  <td>
-    <section id="books">
-     <a name="books"></a>
-     <div class="section-container even">
-     <table align="left">
-      <thead>
-        <tr>
-          <th><b>Books--</b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">   
-   <ol>
-  <li align="center">I Have No Mouth, and I Must Scream - <b> Harlan Ellison</b></li>
-  <li align="center">The analyst - <b>John Katzenbach</b></li>
-  <li align="center">The Long Walk - <b> Stephen King</b></li>
-      </ol>
-	</td>
- <td align="center"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1309212400i/9014.jpg" height="100" width="100" alt="The long walk"/> </td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- About Me Section -->
+  <section id="background" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-center mb-4">About Me</h2>
+          <p class="text-center lead">
+            I like doing <i>art</i>, programming and learning new <i>languages</i>. I strive to be a known 
+            <b>artist</b> or game <b>developer</b>
+          </p>
+          <!-- Iconic link -->
+          <div class="text-center mt-4">
+            <a href="#skills" class="btn btn-primary btn-lg iconic-link" data-bs-toggle="tooltip" title="View my skills">
+              <i class="bi bi-gear-fill me-2"></i>View My Skills
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  </td>
 
-  <td>
-  <section id="movies">
-      <a name="movies"></a>
-      <div class="section-container">
-      <table align="left">
-      <thead>
-        <tr>
-          <th><b>Movies--</b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">   
-   <ol>
-  <li align="center">Reservoir Dogs - <b> Quentin Tarantino</b></li>
-  <li align="center">Halloween - <b>John Carpenter</b></li>
-  <li align="center">Pulp Fiction - <b>Quentin Tarantino</b></li>
-	</ol>
-	</td>
- <td align="center"><img src="https://m.media-amazon.com/images/I/713YvOuOZGL._UF894,1000_QL80_.jpg" height="100" width="100" alt="Reservoir Dogs"/> </td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- Education Section -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12">
+          <p class="h5"><b>CURRENT JOB: </b>Undergraduate Student at Universidad Panamericana</p>
+        </div>
+      </div>
+      
+      <h3 class="text-center mb-4">Schools I Attended</h3>
+      
+      <div class="row g-4">
+        <!-- Elementary -->
+        <div class="col-md-6 col-lg-4 col-xl">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h5 class="card-title mb-0">ELEMENTARY</h5>
+            </div>
+            <div class="card-body text-center">
+              <a href="https://www.tzitlacalli.edu.mx" data-bs-toggle="tooltip" title="Visit Tzitlacali website">
+                <img src="https://www.micole.net/imagenes/colegio/logo/200072583/tzitlacalli-plantel-ermita_512.png" 
+                     class="img-fluid mb-3" alt="Tzitlacali logo">
+              </a>
+              <p class="card-text"><b>Tzitlacali</b> - <em>2007~2012</em></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Primary -->
+        <div class="col-md-6 col-lg-4 col-xl">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-success text-white">
+              <h5 class="card-title mb-0">PRIMARY</h5>
+            </div>
+            <div class="card-body text-center">
+              <a href="https://www.altamira.edu.mx" data-bs-toggle="tooltip" title="Visit Colegio Altamira website">
+                <img src="https://edutory.mx/wp-content/uploads/2021/07/colegio-altamira-logo.png" 
+                     class="img-fluid mb-3" alt="Altamira logo">
+              </a>
+              <p class="card-text"><b>Colegio Altamira</b> - <em>2012~2018</em></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Middle School -->
+        <div class="col-md-6 col-lg-4 col-xl">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-warning text-dark">
+              <h5 class="card-title mb-0">MIDDLE SCHOOL</h5>
+            </div>
+            <div class="card-body text-center">
+              <a href="https://www.altamira.edu.mx" data-bs-toggle="tooltip" title="Visit Colegio Altamira website">
+                <img src="https://edutory.mx/wp-content/uploads/2021/07/colegio-altamira-logo.png" 
+                     class="img-fluid mb-3" alt="Altamira logo">
+              </a>
+              <p class="card-text"><b>Colegio Altamira</b> - <em>2018~2021</em></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- High School -->
+        <div class="col-md-6 col-lg-6 col-xl">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-info text-white">
+              <h5 class="card-title mb-0">HIGH SCHOOL</h5>
+            </div>
+            <div class="card-body text-center">
+              <a href="https://www.altamira.edu.mx" data-bs-toggle="tooltip" title="Visit Colegio Altamira website">
+                <img src="https://edutory.mx/wp-content/uploads/2021/07/colegio-altamira-logo.png" 
+                     class="img-fluid mb-3" alt="Altamira logo">
+              </a>
+              <p class="card-text"><b>Colegio Altamira</b> - <em>2021~2024</em></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- University -->
+        <div class="col-md-6 col-lg-6 col-xl">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-danger text-white">
+              <h5 class="card-title mb-0">UNIVERSITY</h5>
+            </div>
+            <div class="card-body text-center">
+              <a href="https://www.up.edu.mx" data-bs-toggle="tooltip" title="Visit UP website">
+                <img src="https://rugcmx.org/wp-content/uploads/2024/03/logoup.png" 
+                     class="img-fluid mb-3" alt="UP logo">
+              </a>
+              <p class="card-text"><b>Universidad Panamericana</b> - <em>2024~Today</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  </td>
 
-  <td>
-  <section id="tvshows">
-     <a name="tvshows"></a>
-     <div class="section-container even">
-     <table align="left">
-      <thead>
-        <tr>
-          <th><b>Tv Shows--</b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">   
-   <ol>
-  <li align="center">Breaking Bad </li>
-  <li align="center">Doctor House </li>
-  <li align="center">Frieren Beyond the Journey's End</li>
-	</ol>
-	</td>
- <td align="center"><img src="https://m.media-amazon.com/images/M/MV5BZTI4ZGMxN2UtODlkYS00MTBjLWE1YzctYzc3NDViMGI0ZmJmXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" width="100" height="100" alt="Frieren Beyond the Journey's End"/> </td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h3 class="mb-4">Skills</h3>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <!-- Accordion -->
+          <div class="accordion" id="skillsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skillOne">
+                  ART SOFTWARE KNOWLEDGE
+                </button>
+              </h2>
+              <div id="skillOne" class="accordion-collapse collapse show" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Proficiency Level</span>
+                    <span class="badge bg-primary rounded-pill">~60%</span>
+                  </div>
+                  <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillTwo">
+                  API USAGE KNOWLEDGE
+                </button>
+              </h2>
+              <div id="skillTwo" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Proficiency Level</span>
+                    <span class="badge bg-primary rounded-pill">~10%</span>
+                  </div>
+                  <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillThree">
+                  VISUAL TECHNOLOGIES KNOWLEDGE
+                </button>
+              </h2>
+              <div id="skillThree" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Proficiency Level</span>
+                    <span class="badge bg-primary rounded-pill">~10%</span>
+                  </div>
+                  <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  </td>
-</table>
 
-<hr>
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="py-5">
+    <div class="container">
+      <h3 class="mb-4">Hobbies</h3>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">
+                I have several hobbies, such as <b>drawing</b>, <b>3d modeling</b>, <b>playing Counter strike</b>, 
+                on the sidelines, although it's not so <i>ethic</i> I also do some research on 
+                <b>game cheats development</b>, and lastly i'm crazy obsessed with all sorts of 
+                <b>tracking technology</b> and <b>vtubers</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="musicians">
-  <a name="musicians"></a>
-  <div class="section-container">
-  <h3 align="center">FAVORITE MUSICIANS</h3>
-  
-  <table align="center" width="90%" cellpadding="10">
-    <thead>
-      <tr>
-        <th align="center">Adam Levine<br>(Maroon 5)</th>
-        <th align="center">Kurt Cobain<br>(Nirvana)</th>
-        <th align="center">Luis Miguel</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td align="center">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Maroon_5_11_19_2016_-58_%2831101308922%29_%28cropped%29.jpg/250px-Maroon_5_11_19_2016_-58_%2831101308922%29_%28cropped%29.jpg" 
-               height="150" width="120" alt="Adam Levine" />
-        </td>
+  <!-- Favorite Food Section -->
+  <section id="favorite-food" class="py-5 bg-light">
+    <div class="container">
+      <h3 class="mb-4">My Favorite Food</h3>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">JAPANESE</div>
+                the goat
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">MEXICAN</div>
+                it just never misses
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">ITALIAN</div>
+                they know what's up
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">SPANISH</div>
+                nothing like a paella in a hot summer
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">ARAB</div>
+                KEBABBBBBBBBBB
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Books, Movies & TV Shows Section -->
+  <section id="books" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-5">Books, Movies & TV Shows</h3>
+      
+      <div class="row g-4">
+        <!-- Books -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-success text-white">
+              <h4 class="card-title mb-0 text-center">Books</h4>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="flex-grow-1">
+                  <ol>
+                    <li class="mb-2">I Have No Mouth, and I Must Scream - <b>Harlan Ellison</b></li>
+                    <li class="mb-2">The analyst - <b>John Katzenbach</b></li>
+                    <li class="mb-2">The Long Walk - <b>Stephen King</b></li>
+                  </ol>
+                </div>
+                <div class="ms-3">
+                  <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1309212400i/9014.jpg" 
+                       class="img-fluid rounded" height="100" width="100" alt="The long walk">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <td align="center">
-          <img src="https://i.guim.co.uk/img/media/3ddb499c997de950b18527396e9654acb773a20f/0_18_4980_2989/master/4980.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=52d3b1c04c851605a6552e2a4718b67d" 
-               height="150" width="120" alt="Kurt Cobain" />
-        </td>
+        <!-- Movies -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-danger text-white">
+              <h4 class="card-title mb-0 text-center">Movies</h4>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="flex-grow-1">
+                  <ol>
+                    <li class="mb-2">Reservoir Dogs - <b>Quentin Tarantino</b></li>
+                    <li class="mb-2">Halloween - <b>John Carpenter</b></li>
+                    <li class="mb-2">Pulp Fiction - <b>Quentin Tarantino</b></li>
+                  </ol>
+                </div>
+                <div class="ms-3">
+                  <img src="https://m.media-amazon.com/images/I/713YvOuOZGL._UF894,1000_QL80_.jpg" 
+                       class="img-fluid rounded" height="100" width="100" alt="Reservoir Dogs">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <td align="center">
-          <img src="https://www.hola.com/horizon/43/20dddfae05b6-luis-miguel.jpg" 
-               height="150" width="120" alt="Luis Miguel" />
-        </td>
-      </tr>
-      <tr>
-        <td align="center" valign="top">
-          <p><b>Birthday:</b><br>18/3/1979</p>
-          <p><b>Profession:</b><br>singer, writer, actor</p>
-          <p><b>Main achivements:</b><br>
-            - 3 Grammy<br>
-            - 135 million+ CDs sold<br>
-            - "Songs About Jane" (multiple platinum awarded album)
-          </p>
-        </td>
+        <!-- TV Shows -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-info text-white">
+              <h4 class="card-title mb-0 text-center">TV Shows</h4>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="flex-grow-1">
+                  <ol>
+                    <li class="mb-2">Breaking Bad</li>
+                    <li class="mb-2">Doctor House</li>
+                    <li class="mb-2">Frieren Beyond the Journey's End</li>
+                  </ol>
+                </div>
+                <div class="ms-3">
+                  <img src="https://m.media-amazon.com/images/M/MV5BZTI4ZGMxN2UtODlkYS00MTBjLWE1YzctYzc3NDViMGI0ZmJmXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" 
+                       class="img-fluid rounded" width="100" height="100" alt="Frieren Beyond the Journey's End">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Musicians Section -->
+  <section id="musicians" class="py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-5">Favorite Musicians</h3>
+      
+      <div class="row g-4">
+        <!-- Adam Levine -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-header text-center">
+              <h4 class="card-title mb-0">Adam Levine<br><small>(Maroon 5)</small></h4>
+            </div>
+            <div class="card-body text-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Maroon_5_11_19_2016_-58_%2831101308922%29_%28cropped%29.jpg/250px-Maroon_5_11_19_2016_-58_%2831101308922%29_%28cropped%29.jpg" 
+                   class="rounded mb-3" height="150" width="120" alt="Adam Levine">
+              
+              <p><b>Birthday:</b><br>18/3/1979</p>
+              <p><b>Profession:</b><br>singer, writer, actor</p>
+              <p><b>Main achievements:</b><br>
+                - 3 Grammy<br>
+                - 135 million+ CDs sold<br>
+                - "Songs About Jane" (multiple platinum awarded album)
+              </p>
+            </div>
+          </div>
+        </div>
         
-        <td align="center" valign="top">
-          <p><b>Birthday:</b><br>20/2/1967</p>
-          <p><b>Died:</b><br>5/4/1994</p>
-          <p><b>Profession:</b><br>singer, writer, musician</p>
-          <p><b>Main achivements:</b><br>
-            - Nirvana's leader, iconic grunge band<br>
-            - "Nevermind" sold 30 million+ copies<br>
-            - Inside the Hall of Fame del Rock (2014)
-          </p>
-        </td>
+        <!-- Kurt Cobain -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-header text-center">
+              <h4 class="card-title mb-0">Kurt Cobain<br><small>(Nirvana)</small></h4>
+            </div>
+            <div class="card-body text-center">
+              <img src="https://i.guim.co.uk/img/media/3ddb499c997de950b18527396e9654acb773a20f/0_18_4980_2989/master/4980.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=52d3b1c04c851605a6552e2a4718b67d" 
+                   class="rounded mb-3" height="150" width="120" alt="Kurt Cobain">
+              
+              <p><b>Birthday:</b><br>20/2/1967</p>
+              <p><b>Died:</b><br>5/4/1994</p>
+              <p><b>Profession:</b><br>singer, writer, musician</p>
+              <p><b>Main achievements:</b><br>
+                - Nirvana's leader, iconic grunge band<br>
+                - "Nevermind" sold 30 million+ copies<br>
+                - Inside the Hall of Fame del Rock (2014)
+              </p>
+            </div>
+          </div>
+        </div>
         
-        <td align="center" valign="top">
-          <p><b>Birthday:</b><br>19/4/1970</p>
-          <p><b>Profession:</b><br>singer, producer</p>
-          <p><b>Main achivements:</b><br>
-            - 6 Grammy<br>
-            - 100 million+ CDs sold<br>
-            - "El Sol de México", international superstar
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        <!-- Luis Miguel -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-header text-center">
+              <h4 class="card-title mb-0">Luis Miguel</h4>
+            </div>
+            <div class="card-body text-center">
+              <img src="https://www.hola.com/horizon/43/20dddfae05b6-luis-miguel.jpg" 
+                   class="rounded mb-3" height="150" width="120" alt="Luis Miguel">
+              
+              <p><b>Birthday:</b><br>19/4/1970</p>
+              <p><b>Profession:</b><br>singer, producer</p>
+              <p><b>Main achievements:</b><br>
+                - 6 Grammy<br>
+                - 100 million+ CDs sold<br>
+                - "El Sol de México", international superstar
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Form Section -->
+  <section id="schedule-form" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Weekly Schedule Registration</h3>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form class="border rounded p-4 bg-light shadow-sm">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <!-- Floating label -->
+                <div class="form-floating">
+                  <input type="date" class="form-control" id="date" name="date" required>
+                  <label for="date">Date</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-floating">
+                  <input type="time" class="form-control" id="time-start" name="time-start" required>
+                  <label for="time-start">Time Start</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-floating">
+                  <input type="time" class="form-control" id="time-end" name="time-end" required>
+                  <label for="time-end">Time End</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <div class="col-md-8">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="activity" name="activity" 
+                         placeholder="Enter activity description" required>
+                  <label for="activity">Activity</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="place" name="place" 
+                         placeholder="Enter location" required>
+                  <label for="place">Place</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <select class="form-select" id="type" name="type" required>
+                    <option value="">Select activity type</option>
+                    <option value="school">School</option>
+                    <option value="personal">Personal</option>
+                    <option value="professional">Professional</option>
+                    <option value="family">Family</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <label for="type">Type</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="flag" class="form-label">Flag Color:</label>
+                <input type="color" class="form-control form-control-color" id="flag" name="flag" value="#ff0000">
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <div class="form-floating">
+                <textarea class="form-control" id="notes" name="notes" style="height: 100px" 
+                          placeholder="Additional notes or details"></textarea>
+                <label for="notes">Notes</label>
+              </div>
+            </div>
+            
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="busy" name="busy" checked>
+              <label class="form-check-label" for="busy">Mark as busy</label>
+            </div>
+            
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <!-- Button with spinner -->
+              <button type="submit" class="btn btn-primary me-md-2" id="saveButton">
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                Save Schedule
+              </button>
+              <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <a href="#top" class="btn btn-outline-light">Back to Top</a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>You can reach me through the following channels:</p>
+          <ul>
+            <li>Email: example@email.com</li>
+            <li>Phone: +1234567890</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
 
-<h4 align="center">WEEKLY MUSIC SCHEDULE</h4>
-  <table align="center" border="1" cellpadding="8" width="90%" style="border-collapse: collapse;">
-    <thead>
-      <tr bgcolor="#f2f2f2">
-        <th>Date</th>
-        <th>Start</th>
-        <th>End</th>
-        <th>Description</th>
-        <th>Place</th>
-        <th>Disponibility</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!--I'll work on the table later. Leave empty for now-->
-    </tbody>
-  </table>
-</section>
-
-<hr>
-
-<section id="schedule-form">
-  <a name="schedule-form"></a>
-  <div class="section-container even">
-  <h3 align="center">WEEKLY SCHEDULE REGISTRATION</h3>
-  
-  <form>
-    <table align="center" cellpadding="10" width="80%">
-      <tr>
-        <td width="30%"><label for="date">Date:</label></td>
-        <td width="70%"><input type="date" id="date" name="date" required></td>
-      </tr>
-      <tr>
-        <td><label for="time-start">Time Start:</label></td>
-        <td><input type="time" id="time-start" name="time-start" required></td>
-      </tr>
-      <tr>
-        <td><label for="time-end">Time End:</label></td>
-        <td><input type="time" id="time-end" name="time-end" required></td>
-      </tr>
-      <tr>
-        <td><label for="activity">Activity:</label></td>
-        <td><input type="text" id="activity" name="activity" placeholder="Enter activity description" required></td>
-      </tr>
-      <tr>
-        <td><label for="place">Place:</label></td>
-        <td><input type="text" id="place" name="place" placeholder="Enter location" required></td>
-      </tr>
-      <tr>
-        <td><label for="type">Type:</label></td>
-        <td>
-          <select id="type" name="type" required>
-            <option value="">Select activity type</option>
-            <option value="school">School</option>
-            <option value="personal">Personal</option>
-            <option value="professional">Professional</option>
-            <option value="family">Family</option>
-            <option value="other">Other</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td><label for="notes">Notes:</label></td>
-        <td><textarea id="notes" name="notes" rows="4" placeholder="Additional notes or details"></textarea></td>
-      </tr>
-      <tr>
-        <td><label for="flag">Flag Color:</label></td>
-        <td><input type="color" id="flag" name="flag" value="#ff0000"></td>
-      </tr>
-      <tr>
-        <td><label for="busy">Busy/Free:</label></td>
-        <td>
-          <input type="checkbox" id="busy" name="busy" checked>
-          <label for="busy">Mark as busy</label>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" align="center">
-          <input type="submit" value="Save Schedule">
-          <input type="reset" value="Clear Form">
-        </td>
-      </tr>
-    </table>
-  </form>
-  </div>
-</section>
-
-<p align="center"><a href="#top">Back to Top</a></p>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize tooltips and popovers
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    
+    //spinner in save button
+    document.getElementById('saveButton').addEventListener('click', function() {
+      const spinner = this.querySelector('.spinner-border');
+      spinner.classList.remove('d-none');
+      setTimeout(() => {
+        spinner.classList.add('d-none');
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
