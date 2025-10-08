@@ -5,12 +5,12 @@ const sw = require('star-wars-quotes')
 console.log(sw())
 
 //Superhero & Supervillain
-/*import {randomSuperhero} from 'superheroes';
+import {randomSuperhero} from 'superheroes';
 console.log(randomSuperhero())
 import {randomSupervillain} from 'superheroes';
-console.log(randomSupervillain())*/
+console.log(randomSupervillain())
 
 //Secret message
-/*const fs = require('fs');
+const fs = require('fs');
 let secretMessage = fs.readFileSync('./data/input.txt', 'utf8');
-console.log(secretMessage);*/
+console.log(secretMessage);
