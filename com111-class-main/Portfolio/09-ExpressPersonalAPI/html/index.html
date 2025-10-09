@@ -6,20 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Express test</title>
+    <style>
+        .task-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+        .task-text {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+        .arrow-btn, .delete-btn {
+            margin: 0 2px;
+            padding: 2px 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
     <% if (locals.error) { %>
-        <h3>
+        <h3 style="color: red;">
             <%= error %>
         </h3>
-        <% } %>
-            <form action="/greet" method="get">
-                Register:
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="submit" value="go next">
-            </form>
+    <% } %>
 
+    <h2>Greeting System</h2>
+    <form action="/greet" method="get">
+        Register:
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="submit" value="Go Next">
+    </form>
+
+    <% if (names && names.length > 0) { %>
+        <h3>Greeted Users:</h3>
+        <ul>
+            <% names.forEach((name, index) => { %>
+                <li>
+                    <a href="/wazzup/<%= index %>">Hello <%= name %></a>
+                </li>
+            <% }); %>
+        </ul>
+        
+        <script>
+            const lastUser = '<%= names[names.length - 1] %>';
+            if (lastUser) {
+                document.write(`<p>Welcome, ${lastUser}!</p>`);
+            }
+        </script>
+    <% } %>
+
+    <hr>
+
+    <h2>TODO List</h2>
+    <form action="/task" method="post">
+        Add new task:
+        <input type="text" name="task" placeholder="Task description" required>
+        <input type="submit" value="Add Task">
+    </form>
+
+    <% if (tasks && tasks.length > 0) { %>
+        <h3>Tasks:</h3>
+        <div id="task-list">
+            <% tasks.sort((a, b) => a.order - b.order).forEach(task => { %>
+                <div class="task-item">
+                    <form action="/task/up/<%= task.id %>" method="post" style="display: inline;">
+                        <input type="hidden" name="_method" value="PUT">
+                        <button type="submit" class="arrow-btn">↑</button>
+                    </form>
+                    
+                    <form action="/task/down/<%= task.id %>" method="post" style="display: inline;">
+                        <input type="hidden" name="_method" value="PUT">
+                        <button type="submit" class="arrow-btn">↓</button>
+                    </form>
+                    
+                    <span class="task-text"><%= task.text %></span>
+                    
+                    <form action="/task/<%= task.id %>" method="post" style="display: inline;">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="delete-btn">Delete</button>
+                    </form>
+                </div>
+            <% }); %>
+        </div>
+    <% } %>
 </body>
 
 </html>
