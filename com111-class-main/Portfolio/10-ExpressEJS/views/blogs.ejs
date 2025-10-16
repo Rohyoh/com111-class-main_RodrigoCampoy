@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+
+    <main>
+
+        <div class="forums_page_title">
+            <h1>WELCOME TO FORUMS</h1>
+        </div>
+        <% if(locals.forums) { %>
+            
+                <div class="forums_container">
+                    <% forums.forEach((forum) => { %>
+                    
+                        <div class="forum">
+                            <div>
+                                <h1><%= forum.title %></h1>
+                            </div>
+
+                            <div>
+                                <p><%= forum.description %></p>
+                            </div>
+                        </div>
+                    
+                    <% }); %>
+
+                </div>
+            <% } %>
+                
+
+
+    </main>
+
+<%- include("partials/footer"); -%>

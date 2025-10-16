@@ -1,0 +1,30 @@
+<%- include("partials/header"); -%>
+
+    <main>
+        <h1>Welcome <%= username %> good to see you.</h1>
+
+        <div class="forums">
+
+            <form action="/add_blog" method="post">
+                <div>
+                    <h2>Publish a blog</h2>
+                    <input class="blog_title" name="title" type="text" placeholder="Title" required>
+                </div>
+                
+                <div>
+                    <textarea class="blog_description" name="description" type="text" placeholder="Description" required></textarea>
+                </div>
+                
+                <div>
+                    <button class="blog_submit" type="text" placeholder="Title">Submit</button>
+                </div>
+            </form>
+            
+
+        </div>
+
+    </main>
+
+
+<%- include("partials/footer"); -%>
+
